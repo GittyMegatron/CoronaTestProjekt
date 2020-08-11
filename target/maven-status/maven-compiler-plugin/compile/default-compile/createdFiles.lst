@@ -1,0 +1,10 @@
+de/adesso/exercise/coronaApp/repository/CountryRepository.class
+de/adesso/exercise/coronaApp/entity/Country.class
+de/adesso/exercise/coronaApp/entity/User.class
+de/adesso/exercise/coronaApp/entity/Favorites.class
+de/adesso/exercise/coronaApp/CoronaAppApplication.class
+de/adesso/exercise/coronaApp/restcontroller/CountryDAOService.class
+de/adesso/exercise/coronaApp/config/RestTemplateConfig.class
+de/adesso/exercise/coronaApp/repository/FavoriteRepository.class
+de/adesso/exercise/coronaApp/coronaInterface/CoronaRestClient.class
+de/adesso/exercise/coronaApp/restcontroller/CoronaInfoResource.class

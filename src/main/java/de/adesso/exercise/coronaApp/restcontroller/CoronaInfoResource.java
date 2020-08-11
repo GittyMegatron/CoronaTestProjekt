@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,6 +15,7 @@ import de.adesso.exercise.coronaApp.entity.Country;
 
 
 @RestController
+//@CrossOrigin(origins = "http://localhost:4200")
 public class CoronaInfoResource {
 	
 	@Autowired
@@ -34,18 +36,23 @@ public class CoronaInfoResource {
 		return service.findAllCountryInfos();
 	}
 	
+	@GetMapping("/test")
+	public String test() {
+		return "Test";
+	}
+	
 	@GetMapping("/favorites")
 	public List<String> retrieveAllFavorites() {
 		return service.findAllFavorites();
 	}
 	
-	@PostMapping("/favorite/{name}")
-	public void saveFavorite(@PathVariable String name) {
+	@PostMapping("/favorites/{name}")
+	public void saveFavorite(@PathVariable("name") String name) {
 		service.saveFavorite(name);
 	}
 	
 	@DeleteMapping("/favorites/{name}")
-	public void deleteFavorite(@PathVariable String name) {
+	public void deleteFavorite(@PathVariable("name") String name) {
 		service.deleteFavoriteByName(name);
 		
 //		if(user==null) {

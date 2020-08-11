@@ -18,18 +18,23 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import de.adesso.exercise.coronaApp.entity.Country;
+import de.adesso.exercise.coronaApp.entity.Favorites;
 import de.adesso.exercise.coronaApp.repository.CountryRepository;
+import de.adesso.exercise.coronaApp.repository.FavoriteRepository;
 
 @Component
 public class CoronaRestClient implements CommandLineRunner{
 
 	
 	
-	private static CountryRepository countryRepository;
+	private static  CountryRepository countryRepository;
+	private static  FavoriteRepository favoriteRepository;
+	
 	
 	@Autowired
-	public CoronaRestClient(CountryRepository countryRepository) {
+	public CoronaRestClient(CountryRepository countryRepository, FavoriteRepository favoriteRepository) {
 		this.countryRepository = countryRepository;
+		this.favoriteRepository = favoriteRepository;
 	}
 	
 	private static void getAsJsonNode(long id) throws IOException {
@@ -62,6 +67,7 @@ public class CoronaRestClient implements CommandLineRunner{
 		  
 		  
 	}
+
 
 	@Override
 	public void run(String... args) throws Exception {

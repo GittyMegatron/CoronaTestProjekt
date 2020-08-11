@@ -1,4 +1,10 @@
 /Users/wessalowski/Downloads/corona-app/src/main/java/de/adesso/exercise/coronaApp/repository/CountryRepository.java
+/Users/wessalowski/Downloads/corona-app/src/main/java/de/adesso/exercise/coronaApp/config/RestTemplateConfig.java
 /Users/wessalowski/Downloads/corona-app/src/main/java/de/adesso/exercise/coronaApp/entity/Country.java
+/Users/wessalowski/Downloads/corona-app/src/main/java/de/adesso/exercise/coronaApp/restcontroller/CountryDAOService.java
 /Users/wessalowski/Downloads/corona-app/src/main/java/de/adesso/exercise/coronaApp/entity/User.java
+/Users/wessalowski/Downloads/corona-app/src/main/java/de/adesso/exercise/coronaApp/repository/FavoriteRepository.java
 /Users/wessalowski/Downloads/corona-app/src/main/java/de/adesso/exercise/coronaApp/CoronaAppApplication.java
+/Users/wessalowski/Downloads/corona-app/src/main/java/de/adesso/exercise/coronaApp/entity/Favorites.java
+/Users/wessalowski/Downloads/corona-app/src/main/java/de/adesso/exercise/coronaApp/restcontroller/CoronaInfoResource.java
+/Users/wessalowski/Downloads/corona-app/src/main/java/de/adesso/exercise/coronaApp/coronaInterface/CoronaRestClient.java
